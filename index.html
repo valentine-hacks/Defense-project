@@ -27,23 +27,23 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li>
-                        <a href="#Home" class="nav__link">Home</a>
+                        <a href="#Home" class="nav__link" onclick="scrollToSection('home')">Home</a>
                     </li>
 
                      <li>
-                        <a href="#About" class="nav__link">About</a>
+                        <a href="#About" class="nav__link" onclick="scrollToSection('about')">About</a>
                     </li>
 
                      <li>
-                        <a href="#Models" class="nav__link">Models</a>
+                        <a href="#Models" class="nav__link" onclick="scrollToSection('models')">Models</a>
                     </li>
 
                      <li>
-                        <a href="Information" class="nav__link">Information</a>
+                        <a href="#Information" class="nav__link" onclick="scrollToSection('Information')">Information</a>
                     </li>
 
                      <li>
-                        <a href="Contact" class="nav__link">Contact</a>
+                        <a href="#Contact" class="nav__link" onclick="scrollToSection('contact')">Contact</a>
                     </li>
                 </ul>
                 <div class="nav__close" id="nav-close">
@@ -168,7 +168,7 @@
          </section>
 
          <!--==================== INFORMATION ====================-->
-         <section class="info section" id="info">
+         <section class="info section" id="Information">
             <span class="section__subtitle">CHOOSE YOUR AVENTADOR</span>
             <h2 class="section__title info__title">
                 AVENTADOR LP <br>
@@ -203,21 +203,85 @@
 
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
-            
+            <div class="contact__container container grid">
+                <div class="contact__content">
+                    <h2 class="section__title contact__title">
+                        SUBSCRIBE TO GET <br> 
+                        YOUR AVENTADOR
+                    </h2>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__box">
+                                <label for="name" class="contact__label">Names</label>
+                                <input type="text" id="name" placeholder="Enter names" class="contact__input">
+                            </div>
+
+                             <div class="contact__box">
+                                <label for="email" class="contact__label">Email</label>
+                                <input type="email" id="email" placeholder="Enter email" class="contact__input">
+                            </div>
+                        </div>
+
+                        <button class="button contact__button">
+                            SEND EMAIL <i class="ri-arrow-right-s-line"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <img src="contact-car.png" alt="image" class="contact__img">
+            </div>
          </section>
       </main>
 
       <!--==================== FOOTER ====================-->
       <footer class="footer">
-         
+         <div class="footer__container container grid">
+            <a href="#" class="footer__logo">AVENTADOR</a>
+
+            <ul class="footer__links">
+                <li>
+                    <a href="#" class="footer__link">Privacy & Legal</a>
+                </li>
+
+                 <li>
+                    <a href="#" class="footer__link">Contact</a>
+                </li>
+
+                 <li>
+                    <a href="#" class="footer__link">Locations</a>
+                </li>
+
+                 <li>
+                    <a href="#" class="footer__link">News</a>
+                </li>
+
+                 <li>
+                    <a href="#" class="footer__link">Forums</a>
+                </li>
+            </ul>
+
+            <div class="footer__social">
+                <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                </a>
+
+                 <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                 <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-x-line"></i>
+                </a>
+            </div>
+         </div>
+
+         <span class="footer__copy">
+            &#169; All Rights Reserved By Bedimcode
+         </span>
       </footer>
-
-      <!--========== SCROLL UP ==========-->
-
-      
-
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="scrollreveal.min.js"></script>
 
       <!--=============== SWIPER JS ===============-->
       <script src="swiper-bundle.min.js"></script>
